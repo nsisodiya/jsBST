@@ -48,14 +48,6 @@ BSTTree.prototype.isTreeEmpty = function () {
   return this.head === null
 }
 
-BSTTree.prototype.is = function (n1) {
-  return {
-    smallerThen: function (n2) {
-      return n1.key() < n1.key();
-    }
-  }
-}
-
 BSTTree.prototype.traverseFromNode = function (node, visit) {
   //traverseFromNode
   if(node.hasLeft()){
